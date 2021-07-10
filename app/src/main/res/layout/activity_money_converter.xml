@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:srcCompat="@drawable/moneyworkingimage" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/imageView2">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonone"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="7dp">
+
+            <EditText
+                android:id="@+id/inDollarBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonone"
+                android:fontFamily="@font/arima_madurai_medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount in $"
+                android:textColor="@color/black"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/inRsBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="amount in Rs."
+                android:background="@drawable/buttonone"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arima_madurai_medium"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/convertbutton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bluebutton"
+            android:fontFamily="@font/arima_madurai_extrabold"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_baseline_autorenew_24"
+            android:drawablePadding="20dp"
+            android:text="CONVERT"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:layout_gravity=""
+            android:layout_marginLeft="100dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
